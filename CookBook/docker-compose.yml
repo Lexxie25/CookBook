@@ -3,6 +3,10 @@ version: '3.4'
 services:
   cookbook.api:
     image: ${DOCKER_REGISTRY-}cookbookapi
+    container_name: "cookbook.api"
     build:
       context: .
       dockerfile: CookBook.API/Dockerfile
+    ports: 
+      - "35020:80"
+      - "35021:443"
