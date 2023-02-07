@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.API", "CookBook.API\CookBook.API.csproj", "{7DE017AB-D00B-4A4F-8554-D68B963B5E1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.API", "CookBook.API\CookBook.API.csproj", "{7DE017AB-D00B-4A4F-8554-D68B963B5E1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Models", "CookBook.Models\CookBook.Models.csproj", "{02EB09AE-A194-43CD-ABA6-0AED15F64E58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Models", "CookBook.Models\CookBook.Models.csproj", "{02EB09AE-A194-43CD-ABA6-0AED15F64E58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Repo", "CookBook.Repo\CookBook.Repo.csproj", "{1CA4EC8D-28FC-4C76-8681-EFB174A4AAA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Repo", "CookBook.Repo\CookBook.Repo.csproj", "{1CA4EC8D-28FC-4C76-8681-EFB174A4AAA5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{83C55C2D-91A0-424D-8CF0-0B7D7F342B8C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution folder", "Solution folder", "{83C55C2D-91A0-424D-8CF0-0B7D7F342B8C}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Service", "CookBook.Service\CookBook.Service.csproj", "{DAC414DF-EBAE-4D59-9426-F65E4DE92997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Service", "CookBook.Service\CookBook.Service.csproj", "{DAC414DF-EBAE-4D59-9426-F65E4DE92997}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F77AB2C5-A119-483A-B48F-E9C4F24CE133}"
 EndProject
