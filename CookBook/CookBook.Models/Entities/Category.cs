@@ -8,17 +8,10 @@ using System.Threading.Tasks;
 
 namespace CookBook.Models.Entities
 {
-    public  class User :BaseEntity<Guid, string>, IDated
+    public class Category : BaseEntity<Guid, string>, IDated
     {
-        public User() { }
-
-        public User(UserVM src)
-        {
-            LastName = src.LastName;
-        }
-
-        public string LastName { get; set; } = string.Empty;
-
+        public Category() { }
+        public Category(CategoryVM src) { }
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }
         public DateTime Deleted { get; set; }

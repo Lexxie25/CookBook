@@ -1,37 +1,31 @@
 ﻿using CookBook.Models.Entities;
+using CookBook.Models.Entities.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace CookBook.Models.ViewModels
 {
-    public class UserVM
+    public class RecipeVM
     {
-        public UserVM(User src)
+        public RecipeVM(Recipe src)
         {
             Id = src.Id;
             Name = src.Name;
-            LastName = src.LastName;
             Created = src.Created;
             Updated = src.Updated;
             Deleted = src.Deleted;
 
         }
-
-
         public Guid Id { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
-        public string LastName { get; set; } = string.Empty;
-
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }
         public DateTime Deleted { get; set; }
-
-
     }
 }
- 
