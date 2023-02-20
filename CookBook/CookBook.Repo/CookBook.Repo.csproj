@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CookBook.Models\CookBook.Models.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\Interfaces\" />
+    <ProjectReference Include="..\..\Shared\CookBook.Shared.csproj" />
+    <ProjectReference Include="..\CookBook.Models\CookBook.Models.csproj" />
   </ItemGroup>
 
 </Project>
