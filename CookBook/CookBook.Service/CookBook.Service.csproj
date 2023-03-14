@@ -11,8 +11,4 @@
     <ProjectReference Include="..\CookBook.Repo\CookBook.Repo.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Interfaces\" />
-  </ItemGroup>
-
 </Project>
