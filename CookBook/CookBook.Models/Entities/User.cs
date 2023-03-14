@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Models.Entities
 {
-    public  class User :BaseEntity<Guid, string>, IDated
+    public  class User :BaseEntity<string, string>
     {
         public User() { }
 
@@ -18,9 +18,5 @@ namespace CookBook.Models.Entities
         }
 
         public string LastName { get; set; } = string.Empty;
-
-        public DateTime Created { get; set; }
-        public DateTime Updated { get; set; }
-        public DateTime Deleted { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using CookBook.Models.Entities.Interface;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,17 +16,29 @@ namespace CookBook.Models.ViewModels
         {
             Id = src.Id;
             Name = src.Name;
+            Category = src.Category;
             Created = src.Created;
             Updated = src.Updated;
             Deleted = src.Deleted;
-
+            
         }
         public Guid Id { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
+        public string Category { get; set; } = string.Empty;
+
+
+        //Collections of steps etc 
+        public ICollection<DirectionVM>? Directions { get; set; }
+
+        public ICollection<IngredientVM>? Ingredients { get; set; }
+
+
+         //IDated Fields 
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }
         public DateTime Deleted { get; set; }
+
     }
 }

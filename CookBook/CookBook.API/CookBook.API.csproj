@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CookBook.Models\CookBook.Models.csproj" />
     <ProjectReference Include="..\CookBook.Service\CookBook.Service.csproj" />
   </ItemGroup>

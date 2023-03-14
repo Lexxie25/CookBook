@@ -13,23 +13,16 @@ namespace CookBook.Models.ViewModels
         {
             Id = src.Id;
             Name = src.Name;
-            LastName = src.LastName;
-            Created = src.Created;
-            Updated = src.Updated;
-            Deleted = src.Deleted;
+            LastName = src.LastName;    
 
         }
 
 
-        public Guid Id { get; set; }
+        public string Id { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
         public string LastName { get; set; } = string.Empty;
-
-        public DateTime Created { get; set; }
-        public DateTime Updated { get; set; }
-        public DateTime Deleted { get; set; }
 
 
     }

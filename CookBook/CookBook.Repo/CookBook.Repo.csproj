@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\CookBook.Shared.csproj" />
     <ProjectReference Include="..\CookBook.Models\CookBook.Models.csproj" />
+    <ProjectReference Include="..\CookBook.Shared\CookBook.Shared.csproj" />
   </ItemGroup>
 
 </Project>

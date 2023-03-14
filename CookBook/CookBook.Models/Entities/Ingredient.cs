@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace CookBook.Models.Entities
 {
-    public class Ingredients :BaseEntity<Guid, string>, IDated
+    public class Ingredient :BaseEntity<Guid, string>, IDated
     {
-        public Ingredients() { }
-        public Ingredients(IngredientsVM src) 
+        public Ingredient() { }
+        public Ingredient(IngredientVM src) 
         {
             Item = src.Item;
             Qty = src.Qty;

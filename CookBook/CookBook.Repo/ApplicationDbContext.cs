@@ -19,7 +19,7 @@ public class ApplicationDbContext : DbContext
         }
         public DbSet<Recipe> Recipes => Set<Recipe>();
         public DbSet<User> Users => Set<User>();
-        public DbSet<Category> Categories => Set<Category>();
+
     }
 }
 

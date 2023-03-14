@@ -1,22 +1,28 @@
-﻿using CookBook.Models.Entities.Interface;
-using CookBook.Models.ViewModels;
+﻿using CookBook.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace CookBook.Models.Entities
+namespace CookBook.Models.ViewModels
 {
-    public class Directions :BaseEntity<Guid, string>, IDated
+    public class DirectionVM
     {
-        public Directions() { }
-        public Directions(DirectionsVM src) 
+        public DirectionVM(Direction src)
         {
+            Id = src.Id;
+            Name = src.Name;
             Steps = src.Steps;
             Instructions = src.Instructions;
             Notes = src.Notes;
+
         }
+        public Guid Id { get; set; }
+
+        public string Name { get; set; } = string.Empty;
+
         public int Steps { get; set; }
 
         public string Instructions { get; set; } = string.Empty;
@@ -25,6 +31,6 @@ namespace CookBook.Models.Entities
         public DateTime Created { get; set; }
         public DateTime Updated { get; set; }
         public DateTime Deleted { get; set; }
-
     }
+ 
 }
