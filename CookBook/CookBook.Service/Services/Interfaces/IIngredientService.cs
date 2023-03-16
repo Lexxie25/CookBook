@@ -7,18 +7,16 @@ using System.Threading.Tasks;
 
 namespace CookBook.Service.Services.Interfaces
 {
-    public interface IDirectionService
+    public interface IIngredientService
     {
-        Task<DirectionVM> Create(DirectionVM src);
+        Task<IngredientVM> Create(IngredientVM src);
 
-        Task<DirectionVM> GetById(Guid Id);
+        Task<IngredientVM> GetById(Guid Id);
 
-        Task<List<DirectionVM>> GetAll();
+        Task<List<IngredientVM>> GetAll();
 
-        Task<DirectionVM> Update(DirectionVM src);
+        Task<IngredientVM> Update(IngredientVM src);
 
         Task Delete(Guid Id);
-
     }
 }
- 

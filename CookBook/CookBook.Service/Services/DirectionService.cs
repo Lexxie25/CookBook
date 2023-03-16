@@ -30,15 +30,6 @@ namespace CookBook.Service.Services
             return model; 
         }
 
-        //get by Id 
-        public async Task<DirectionVM> GetById(Guid Id)
-        {
-            var result = await _uow.Directions.GetById(Id);
-
-            var model = new DirectionVM(result);
-
-            return model;
-        }
         //get all 
         public async Task<List<DirectionVM>> GetAll()
         {
@@ -48,6 +39,17 @@ namespace CookBook.Service.Services
 
             return models;
         }
+
+        //get by Id 
+        public async Task<DirectionVM> GetById(Guid Id)
+        {
+            var result = await _uow.Directions.GetById(Id);
+
+            var model = new DirectionVM(result);
+
+            return model;
+        }
+    
         //update
         public async Task<DirectionVM> Update(DirectionVM src)
         {
@@ -65,6 +67,7 @@ namespace CookBook.Service.Services
 
             return model; 
         }
+
         //Delete
         public async Task Delete(Guid Id)
         {
